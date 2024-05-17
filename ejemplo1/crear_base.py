@@ -9,13 +9,13 @@ from configuracion import engine
 
 
 from sqlalchemy.ext.declarative import declarative_base
-Base = declarative_base()
+Base = declarative_base()# es la superclase para vincular con el sqlalchemy
 
 
 from sqlalchemy import Column, Integer, String
 
 class Saludo(Base):
-    __tablename__ = 'saludos'
+    __tablename__ = 'saludos'#tiene que tener doble guien bajo al inicio y al final
 
     id = Column(Integer, primary_key=True)
     mensaje = Column(String(200))

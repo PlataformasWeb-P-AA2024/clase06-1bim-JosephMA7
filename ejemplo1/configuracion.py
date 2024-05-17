@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 # sqlite
 
 engine = create_engine('sqlite:///demobase.db', echo=True)
-
+#el engine es la coneccion para el sqlite
 # mysql
 # pip install mysql-connector-python
 # engine = create_engine("mysql+mysqlconnector://user:pass@localhost:3306/demo100", echo=True)
